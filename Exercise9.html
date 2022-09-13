@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9: HTML Form</title>
+</head>
+<body>
+    <h1>Exercise 9: HTML Form</h1>
+    <h2>Go to <a href="index.html">Home</a></h2>
+    <hr>
+    
+    <main>
+        <form action="">
+            <section>
+                <table cellpadding="8">
+                    <thead>
+                        <th><h1>Learning HTML Form</h1></th>
+                    </thead>
+                        <tr>
+                            <td>
+                                <label for="Fname"> <strong>Full Name: </a></label>
+                            </td>
+                            <td>
+                                <input type="text" name="fname" id="fname" maxlength="30" placeholder="Last name, First name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pword"> <strong>Password: </label></td>
+                            <td><input type="password" name="pword" id="pword" placeholder="Your password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email"> <strong>Email Address: </strong></label></td>
+                            <td><input type="email" name="email" id="eamil" placeholder="abc@123.com" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Status"><strong>Status: </strong></label>
+                            </td>
+                            <td>
+                                <label for="S">
+                                <input type="radio" name="S" id="S"> Single
+                                </label>
+                                <label for="M">
+                                    <input type="radio" name="M" id="M"> Married
+                                </label>
+                                <label for="W">
+                                    <input type="radio" name="W" id="W"> Widow
+                                </label>
+                            </td>
+                        <tr>
+                            <td>
+                                <label for="DOB">
+                                    <strong>Date of Birth: </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="date" name="dob" id="dob" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="age">
+                                    <strong>Age: </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="number" name="age" id="age" maxlength="3" placeholder="Your Age" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="benefits">
+                                    <strong>Government Benefits:</strong>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="SSS" id="sss">SSS<br>
+                                <input type="checkbox" name="hdmf" id="hdmf">HDMF<br>
+                                <input type="checkbox" name="phealth" id="phealth">PhilHealth<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="schedule">
+                                    <strong>Preferred Schedule: </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="time" name="schedule" id="schedule" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="payout">
+                                    <strong>Payout Options: </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <select name="payout" id="payout">
+                                    <option value="monthly">Monthly</option>
+                                    <option value="weekly">Weekly</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="iprovider">
+                                    <strong>Internet Provider: </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="iprovider" id="iprovider">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="upload">
+                                    <strong>Upload ID Photo: </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="file" name="upload" id="upload">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Addinfo">
+                                    <strong>
+                                        Additional Info:
+                                    </strong>
+                                </label>
+                            </td>
+                            <td>
+                                <textarea name="addinfo" id="addinfo" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>
+                </table>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
