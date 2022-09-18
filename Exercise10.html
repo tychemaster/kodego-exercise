@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10: Basic CSS</title>
+    <style>
+        #body {
+            background-image: url(https://media.istockphoto.com/vectors/abstract-polygon-geometric-background-vector-id485217368?k=20&m=485217368&s=612x612&w=0&h=y93SPvPElXyYu_xNFn7uEf1mXLADdy80rWRc0OFLbd8=);
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #h1docs {
+            background-image: url(https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            line-height: 50px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #FFD300;
+            text-shadow: 2px 2px black;
+            position: sticky; top: 5px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            }
+        .h2docs {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #FFFDD0;
+            text-shadow: 3px 1px #974c00;
+            font-weight: bolder;
+        }
+        #h1title {
+            color: white;
+            text-shadow: 2px 2px #974c00;
+        }
+        #h2title {
+            color: white;
+            text-shadow: 2px 2px #974c00;
+        }
+        .m-article {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #8E1600;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        .link {
+            color: #974c00;
+            background-color: transparent;
+            font-weight: bold;
+        }
+        .link:hover {
+            background-color: black;
+        }
+        #h2title-link {
+            color: #FFD300;
+            background-color: transparent;
+            font-weight: bold;
+        }
+        #h2title-link:hover {
+            background-color: #c49102;
+        }
+        .m-p {
+            margin: 30px;
+        }
+        .m-table {
+            table-layout: auto;
+            width: 100%;
+            margin: 10px;
+        }
+        p {
+            text-indent: 2em;
+        }
+        .h3docs {
+            text-align: center;
+        }
+        #code-last {
+            text-align: center;
+        }
+        #h5foot {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            position: sticky; bottom: 5px;
+            background-color: #FFD300;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1 id="h1title">Exercise 10: Basic CSS</h1>
+    <h2 id="h2title">Go to <a href="index.html" title="Home"  id="h2title-link"> Home</a></h2>
+    <hr>
+    <main>
+        <h1 id="h1docs" class="h1docs">The Complete Guide <br>To CSS Selectors</h1>
+        <article id="m-article1" class="m-article">
+            <h2 id="h2docs-ar1" class="h2docs">Learning CSS3 selectors - "The basics"</h2>
+        
+            <div>
+                <img src="https://i.pinimg.com/736x/b0/32/df/b032dfbc0efc7d51abb0647fdd9b0e0d.jpg" alt="">
+                
+            </div>
+                <p id="m-p1" class="m-p">
+                    To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.
+                    <br>
+                    All HTML tags have styles associated with them.
+                </p>
+                <p id="m-p2" class="m-p">
+                    Using a class selector gives you the ability to setup an independent style that you can then apply to any HTML Tag.
+                    <br>
+                    Unlike an HTML selector, which automatically targets a specific tag, a class is given a unique name that is then specified using the sytle attribute in the HTML tag or tags you want to use it in.
+                    <br>
+                    <br>
+                    For Example:
+                    <br>
+                    <code>
+                        <em>
+                            <span>p.authorName</span><span>{</span><span>font-size: 1em;</span><span>}</span>
+                        </em>
+                    </code>
+                </p>
+            <table id="m-table1" class="m-table">
+                <thead>
+                    <th>
+                        <h3 id="h3docs-sec1" class="h3docs">To define an HTML selector:</h3>
+                    </th>
+                    <th>
+                        <h3 id="h3docs-sec2" class="h3docs">To define a class selector:</h3>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>
+                                Start with the HTML selector whose properties yiou want to define. Add a curly bracket to open your rule.
+                            </p>
+                            <p>
+                                Make sure you always close your declaration list with a curly bracket.
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Type a period (.) and a class name, then open and close your decalration block with curly brackets.
+                            </p><a href="#" title="To define an HTML selector..." class="link">read more</a>
+                            <br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <hr>
+        <article id="m-article2" class="m-article">
+            <h2 id="h2docs-ar2" class="h2docs">Learning CSS3 selectors - "Attribute Selectors"</h2>
+            <div>
+                <img src="https://miro.medium.com/max/1400/1*Lgl_cwoyR8YKQueZuZyv8w.png" alt="">
+            </div>
+            <p id="m-p5" class="m-p">
+                You can look for elements that have a certain HTML attribute, or have a certain value for an HTML attribute, using the attribute selector.
+            <p class="m-p">
+                Instruct CSS to look for attributes by wrapping the selector with square brackets (<span>[</span><span>]</span>).
+                <code>
+                    <span>[data-type='primary']</span>{<span>color: blue;</span>}</span>
+                </code>
+            </p>
+            <p class="m-p">
+                This CSS looks for all elements that have an attribute of data-type with a value of primary, like this: 
+                <br>
+                <br>
+                <code>
+                    &lt;div data-type="primary"&gt; &lt;/div&gt;
+                </code>
+            </p>
+            </p>
+        </article>
+        <hr>
+        <article id="m-article3" class="m-article">
+            <h2 id="h2docs-ar3" class="h2docs">Learning CSS3 selectors - "Action PseudoClass Selectors"</h2>
+            <p id="m-p6" class="m-p">HTML elements find themselves in various states, either because they are interacted with, or one of their child elements is in a certain state.</p>
+            <p id="m-p7" class="m-p">For example, an HTML element could be hovered with the mouse pointer by a user or a child element could also be hovered by the user. For those situations, use the <span>:hover</span>pseudo-class. <a href="#" title="Learning CSS3 selector..." class="link">read more</a>
+            </p>
+            <p id="m-p8" class="m-p">
+                <h3 id="h3docs-ar3" class="h3docs">Pseudo-element #</h3>
+            </p>
+            <p class="m-p">
+                Pseudo-elements differ from pseudo-classes because instead of responding to the platform state, they act as if they are inserting a new element with CSS. Pseudo-elements are also syntactically different from pseudo-classes, because instead of using a single colon (<span>:</span>), we use double colon (<span>::</span>) <a href="#" title="Pseudo-element..." class="link">read more</a>
+            </p>
+        </article>
+        <hr>
+        <article id="m-article4" class="m-article">
+            <h2 id="h2docs-ar4" class="h2docs">Learning CSS3 selectors - "Combinators Selectors"</h2>
+            <p id="m-p8" class="m-p">
+                A combinator is what sits between two selectors. For example, if the selector was p > strong, the combinator is the > character. The selectors which use these combinators help you select items based on their position in the document.
+                <a href="#" title="Learning CSS3 selectors..." class="link">read more</a>
+            </p>
+            <p id="m-p9" class="m-p">
+                <h3 id="h3docs-ar4" class="h3docs">Descendant combinator #</h3>
+            </p>
+            <p class="m-p">
+                To understand descendant combinators, you need to first understand parent and child elements.
+                <br>
+                <br>
+                <code id="code-last">
+                    <span>&lt;p&gt;</span> <br>
+                    A paragraph of text with some </Span>&lt;strong&gt;bold text for emphasis.&lt;/strong&gt;
+                    <br>&lt;/p&gt;
+                </code>
+            </p>
+            <p class="m-p">
+                The parent element is the &lt;p&gt; which contains text. Inside that &lt;p&gt; element is a &lt;strong&gt; element, making its content bold. Because it is inside the &lt;p&gt;, it is a child element.
+                <a href="#" title="Descendant combinator..." class="link">read more</a>
+            </p>
+        </article>
+        
+        <h5 id="h5foot">
+            <hr>
+            Presented by: <a href="https://kodego.ph/">KodeGo.ph</a> Students | WD19P
+        </h5>
+    </main>
+</body>
+</html>
